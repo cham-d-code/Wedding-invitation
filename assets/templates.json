@@ -1,0 +1,318 @@
+[
+ {
+  "id": "p01-silk-perahera",
+  "file": "premium/p01-silk-perahera.html",
+  "name": "Silk Perahera",
+  "category": "Premium · Kandyan traditional",
+  "blurb": "Ivory silk drape, a fine gold mandala and a marching Kandyan perahera along the bottom.",
+  "color": "#7a1f22",
+  "tags": [
+   "Premium",
+   "Traditional"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p02-silk-sage-lotus",
+  "file": "premium/p02-silk-sage-lotus.html",
+  "name": "Sage Lotus Silk",
+  "category": "Premium · Sinhala traditional",
+  "blurb": "Pale sage silk with white lotus line art, a gold mandala crown and a sage perahera.",
+  "color": "#3f5b47",
+  "tags": [
+   "Premium",
+   "Traditional"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p03-velvet-seal",
+  "file": "premium/p03-velvet-seal.html",
+  "name": "Velvet Seal",
+  "category": "Premium · Luxury",
+  "blurb": "Emerald velvet with gold botanical line art, a velvet envelope and a gold wax seal.",
+  "color": "#143328",
+  "tags": [
+   "Premium",
+   "Luxury"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p04-silk-letter",
+  "file": "premium/p04-silk-letter.html",
+  "name": "Silk Letter",
+  "category": "Premium · Classic",
+  "blurb": "Dove-grey silk, a sage paper envelope and a gold wax seal pressed with a little tree.",
+  "color": "#7f8574",
+  "tags": [
+   "Premium",
+   "Modern"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p05-royal-curtain",
+  "file": "premium/p05-royal-curtain.html",
+  "name": "Royal Curtain",
+  "category": "Premium · Grand traditional",
+  "blurb": "Heavy crimson velvet curtains part to reveal an ivory and gold palace-style invitation.",
+  "color": "#6d0f10",
+  "tags": [
+   "Premium",
+   "Traditional"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p06-emerald-drape",
+  "file": "premium/p06-emerald-drape.html",
+  "name": "Emerald Drape",
+  "category": "Premium · Luxury",
+  "blurb": "Deep green satin drapes on a gold rod, names on the curtain and a glowing gold button.",
+  "color": "#1b3327",
+  "tags": [
+   "Premium",
+   "Luxury"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p07-sakura-blush",
+  "file": "premium/p07-sakura-blush.html",
+  "name": "Sakura Blush",
+  "category": "Premium · Watercolor floral",
+  "blurb": "Blush watercolor paper, cherry-blossom branches and a gold-ringed monogram — pretty and playful.",
+  "color": "#c0647a",
+  "tags": [
+   "Premium",
+   "Floral"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p08-rose-garden",
+  "file": "premium/p08-rose-garden.html",
+  "name": "Rose Garden",
+  "category": "Premium · Watercolor floral",
+  "blurb": "Cream paper with a lush watercolor bouquet of roses, anemones and eucalyptus.",
+  "color": "#b0605a",
+  "tags": [
+   "Premium",
+   "Floral"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p09-blue-hydrangea",
+  "file": "premium/p09-blue-hydrangea.html",
+  "name": "Blue Hydrangea",
+  "category": "Premium · Watercolor floral",
+  "blurb": "Soft cream paper framed by dusty-blue hydrangeas, navy italic names and a faded couple photo.",
+  "color": "#34466b",
+  "tags": [
+   "Premium",
+   "Floral"
+  ],
+  "premium": true
+ },
+ {
+  "id": "p10-ivory-lattice",
+  "file": "premium/p10-ivory-lattice.html",
+  "name": "Ivory Lattice",
+  "category": "Premium · Minimal traditional",
+  "blurb": "Crisp ivory with a faint gold lattice, a fine gold frame and a slot for your couple illustration.",
+  "color": "#8a6a2a",
+  "tags": [
+   "Premium",
+   "Traditional"
+  ],
+  "premium": true
+ },
+ {
+  "id": "01-poruwa-heritage",
+  "file": "templates/01-poruwa-heritage.html",
+  "name": "Poruwa Heritage",
+  "category": "Traditional · Sinhala Buddhist",
+  "blurb": "Maroon and temple gold with liyawel scrolls, oil lamps and a slow-turning lotus mandala.",
+  "color": "#6e161b",
+  "tags": [
+   "Traditional"
+  ],
+  "premium": false
+ },
+ {
+  "id": "02-kandyan-royal",
+  "file": "templates/02-kandyan-royal.html",
+  "name": "Kandyan Royal",
+  "category": "Traditional · Luxury",
+  "blurb": "Deep oxblood velvet, a gilded pun kalasa and shimmering gold script behind a theatre-curtain reveal.",
+  "color": "#3d0b0e",
+  "tags": [
+   "Traditional",
+   "Luxury"
+  ],
+  "premium": false
+ },
+ {
+  "id": "03-nelum-lotus-pond",
+  "file": "templates/03-nelum-lotus-pond.html",
+  "name": "Nelum Lotus Pond",
+  "category": "Traditional · Pastel",
+  "blurb": "Soft blush and jade, a lotus blooming from rippling water, falling pink petals.",
+  "color": "#e8a0b4",
+  "tags": [
+   "Traditional"
+  ],
+  "premium": false
+ },
+ {
+  "id": "04-araliya-garden",
+  "file": "templates/04-araliya-garden.html",
+  "name": "Araliya Garden",
+  "category": "Traditional · Floral",
+  "blurb": "Fresh white and leaf green, swaying frangipani clusters, falling araliya blossoms.",
+  "color": "#3f5e45",
+  "tags": [
+   "Traditional",
+   "Floral"
+  ],
+  "premium": false
+ },
+ {
+  "id": "05-mangalam-tamil",
+  "file": "templates/05-mangalam-tamil.html",
+  "name": "Mangalam",
+  "category": "Hindu · Tamil traditional",
+  "blurb": "Turmeric, kumkum red and brass — marigold thoranam, kuthuvilakku lamps, a turning kolam.",
+  "color": "#9e1020",
+  "tags": [
+   "Traditional",
+   "Hindu"
+  ],
+  "premium": false
+ },
+ {
+  "id": "06-kovil-emerald",
+  "file": "templates/06-kovil-emerald.html",
+  "name": "Kovil Emerald",
+  "category": "Hindu · Luxury",
+  "blurb": "Emerald and temple gold with a glowing gopuram outline and swaying jasmine strands.",
+  "color": "#0c3a2d",
+  "tags": [
+   "Hindu",
+   "Luxury"
+  ],
+  "premium": false
+ },
+ {
+  "id": "07-nikah-noor",
+  "file": "templates/07-nikah-noor.html",
+  "name": "Nikah Noor",
+  "category": "Muslim · Classic",
+  "blurb": "Midnight teal with an arched mihrab frame, Bismillah calligraphy and hanging gold stars.",
+  "color": "#0b2a3a",
+  "tags": [
+   "Muslim",
+   "Modern"
+  ],
+  "premium": false
+ },
+ {
+  "id": "08-rose-nikah",
+  "file": "templates/08-rose-nikah.html",
+  "name": "Rose Nikah",
+  "category": "Muslim · Soft & romantic",
+  "blurb": "Dusty rose and ivory, geometric lattice and swinging glowing lanterns.",
+  "color": "#b86b77",
+  "tags": [
+   "Muslim"
+  ],
+  "premium": false
+ },
+ {
+  "id": "09-holy-matrimony",
+  "file": "templates/09-holy-matrimony.html",
+  "name": "Holy Matrimony",
+  "category": "Catholic · Classic church",
+  "blurb": "Ivory and gilded gold, a cathedral arch with a radiant cross and doves in flight.",
+  "color": "#1f2a44",
+  "tags": [
+   "Catholic",
+   "Modern"
+  ],
+  "premium": false
+ },
+ {
+  "id": "10-rose-window",
+  "file": "templates/10-rose-window.html",
+  "name": "Rose Window",
+  "category": "Catholic · Stained glass",
+  "blurb": "Deep cathedral navy with a slowly turning, glowing stained-glass rose window.",
+  "color": "#0f1830",
+  "tags": [
+   "Catholic"
+  ],
+  "premium": false
+ },
+ {
+  "id": "11-golden-opulence",
+  "file": "templates/11-golden-opulence.html",
+  "name": "Golden Opulence",
+  "category": "Luxury · Art deco",
+  "blurb": "Black lacquer and liquid gold — Gatsby-style frames, a sunburst crest and falling gold leaf.",
+  "color": "#0b0b0b",
+  "tags": [
+   "Luxury"
+  ],
+  "premium": false
+ },
+ {
+  "id": "12-midnight-champagne",
+  "file": "templates/12-midnight-champagne.html",
+  "name": "Midnight Champagne",
+  "category": "Luxury · Evening",
+  "blurb": "Starry midnight navy with champagne foil, a turning monogram dial and twinkling stars.",
+  "color": "#0d1530",
+  "tags": [
+   "Luxury"
+  ],
+  "premium": false
+ },
+ {
+  "id": "13-modern-minimal",
+  "file": "templates/13-modern-minimal.html",
+  "name": "Modern Minimal",
+  "category": "Modern · Editorial",
+  "blurb": "Gallery-white editorial layout with oversized serif type, a clean grid and crisp reveals.",
+  "color": "#111111",
+  "tags": [
+   "Modern"
+  ],
+  "premium": false
+ },
+ {
+  "id": "14-coastal-vows",
+  "file": "templates/14-coastal-vows.html",
+  "name": "Coastal Vows",
+  "category": "Modern · Beach",
+  "blurb": "Sunset sand and ocean teal with rolling animated waves and palm silhouettes — made for Bentota and Galle.",
+  "color": "#1f6f78",
+  "tags": [
+   "Modern"
+  ],
+  "premium": false
+ },
+ {
+  "id": "15-tea-country",
+  "file": "templates/15-tea-country.html",
+  "name": "Tea Country",
+  "category": "Modern · Botanical",
+  "blurb": "Misty hill-country greens with layered tea terraces, arching leaf sprigs and drifting leaves.",
+  "color": "#34462f",
+  "tags": [
+   "Modern"
+  ],
+  "premium": false
+ }
+]

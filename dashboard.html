@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dashboard — Mangala</title>
+<meta name="description" content="See RSVPs and share personal guest links for your wedding invitation.">
+<meta property="og:title" content="Dashboard — Mangala"><meta property="og:description" content="See RSVPs and share personal guest links for your wedding invitation."><meta property="og:type" content="website">
+<meta name="theme-color" content="#6e1a1f">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css"><style>
+.dash{max-width:1100px;margin:0 auto;padding:40px 20px 100px}
+.dash h1{font-size:clamp(2.2rem,5vw,3.2rem)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stat{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);padding:18px}
+.stat b{display:block;font-family:var(--f-display);font-size:2.4rem;font-weight:500;line-height:1;color:var(--maroon);font-variant-numeric:tabular-nums}
+.stat span{font-size:.82rem;color:var(--muted)}
+@media(max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+.per-event{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.per-event li{background:var(--paper);border-radius:999px;padding:6px 14px;font-size:.85rem;display:flex;gap:8px}
+.panel{background:var(--card);border:1px solid var(--line-2);border-radius:var(--radius);padding:22px;margin-top:22px}
+.panel h2{font-size:1.7rem}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th{text-align:left;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:10px;border-bottom:1px solid var(--line)}
+td{padding:12px 10px;border-bottom:1px solid var(--line-2);vertical-align:top}
+td.num{font-variant-numeric:tabular-nums;text-align:right}th.num{text-align:right}
+td.when{white-space:nowrap;color:var(--muted);font-size:.82rem}
+td.empty{text-align:center;color:var(--muted);padding:34px}
+.pill{display:inline-block;border-radius:999px;padding:3px 10px;font-size:.76rem;font-weight:600;white-space:nowrap}
+.pill.ok{background:#e4f2e8;color:var(--ok)}.pill.no{background:#f7e6e6;color:var(--err)}
+.links{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px}
+.links li{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;background:var(--ivory)}
+.links li>div{display:grid;gap:4px;flex:1;min-width:200px}.links input{font-size:.8rem;min-height:36px}
+.links li>span{display:flex;gap:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.two{grid-template-columns:1fr}}
+.mine{padding-left:18px}
+</style>
+<script src="assets/config.js"></script>
+</head>
+<body><header class="site-head"><div class="wrap">
+<a class="logo" href="index.html"><svg class="" viewBox="0 0 200 134" aria-hidden="true"><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(-72)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(-48)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(48)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(72)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C18 -21.6 16.2 -57.6 0 -72C-16.2 -57.6 -18 -21.6 0 0Z" transform="translate(100 112) rotate(-24)" fill="#f3d9a4" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C18 -21.6 16.2 -57.6 0 -72C-16.2 -57.6 -18 -21.6 0 0Z" transform="translate(100 112) rotate(24)" fill="#f3d9a4" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C20 -25.2 18 -67.2 0 -84C-18 -67.2 -20 -25.2 0 0Z" transform="translate(100 112)" fill="#f3d9a4" stroke="#6e1a1f" stroke-width="1"/><path d="M46 114Q100 132 154 114" fill="none" stroke="#6e1a1f" stroke-width="1.5"/></svg><span data-site="brand">Mangala</span></a>
+<button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+<nav class="nav" aria-label="Main"><a href="templates.html">Designs</a><a href="index.html#how">How it works</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a><a href="dashboard.html" aria-current="page">My invitations</a>
+<a class="btn small" href="create.html">Create invitation</a></nav></div></header>
+<main class="dash">
+<p class="eyebrow">Your dashboard</p><h1 id="couple">My invitations</h1><p class="muted" id="when"></p>
+<div id="nokey" hidden class="panel"><h2>Open your dashboard</h2><p class="muted" style="margin-top:8px">Use the private dashboard link you received when you published your invitation. You can still make personal guest links below for any invitation link.</p><div id="mine"></div>
+<p style="margin-top:16px"><a class="btn" href="create.html">Create an invitation</a></p></div>
+<div id="rsvp-area">
+<div class="panel"><div class="panel-head"><h2>Your invitation</h2><span style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn small ghost" id="view" target="_blank" rel="noopener">View</a><a class="btn small" id="edit">Edit invitation</a></span></div>
+<div class="copyrow"><input type="text" readonly id="inv-link" aria-label="Invitation link"><button type="button" class="btn small" data-copy="inv-link">Copy link</button></div></div>
+<div class="stats" id="stats"></div><ul class="per-event" id="per-event"></ul>
+<div class="panel"><div class="panel-head"><h2>Replies</h2><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="muted" id="updated" style="font-size:.8rem"></span><button type="button" class="btn small ghost" id="refresh">Refresh</button><button type="button" class="btn small" id="csv">Download spreadsheet</button></span></div>
+<div class="tbl"><table><thead><tr><th>Name</th><th>Reply</th><th class="num">Guests</th><th>Events</th><th>Message</th><th>When</th></tr></thead><tbody id="rows"><tr><td colspan="6" class="empty">Loading…</td></tr></tbody></table></div></div>
+</div>
+<div class="panel"><h2>Personal guest links</h2><p class="muted" style="margin-top:6px">Each guest sees their own name on the envelope, and their RSVP is filled in. Type one name per line.</p>
+<div class="field" id="base-row" hidden style="margin-top:14px"><label for="base-url">Invitation link</label><input type="url" id="base-url" placeholder="https://yourdomain.lk/i/your-names"></div>
+<div class="two" style="margin-top:14px"><div class="field"><label for="guests">Guest names</label><textarea id="guests" rows="7" placeholder="Uncle Sunil &amp; Family&#10;Aunty Kamala&#10;Nimal &amp; Priya"></textarea></div>
+<div class="field"><label for="msg">WhatsApp message</label><textarea id="msg" rows="7">Dear {name}, with joy we invite you to our wedding. Please open your invitation here: {link}</textarea><span class="hint">{name} and {link} are filled in for each guest.</span></div></div>
+<ul class="links" id="links"></ul></div>
+</main><footer class="site-foot"><div class="wrap">
+<div><a class="logo" href="index.html" style="font-size:1.35rem"><svg class="" viewBox="0 0 200 134" aria-hidden="true"><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(-72)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(-48)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(48)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C15 -18.6 13.5 -49.6 0 -62C-13.5 -49.6 -15 -18.6 0 0Z" transform="translate(100 112) rotate(72)" fill="#e9c47f" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C18 -21.6 16.2 -57.6 0 -72C-16.2 -57.6 -18 -21.6 0 0Z" transform="translate(100 112) rotate(-24)" fill="#f3d9a4" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C18 -21.6 16.2 -57.6 0 -72C-16.2 -57.6 -18 -21.6 0 0Z" transform="translate(100 112) rotate(24)" fill="#f3d9a4" stroke="#6e1a1f" stroke-width="1"/><path d="M0 0C20 -25.2 18 -67.2 0 -84C-18 -67.2 -20 -25.2 0 0Z" transform="translate(100 112)" fill="#f3d9a4" stroke="#6e1a1f" stroke-width="1"/><path d="M46 114Q100 132 154 114" fill="none" stroke="#6e1a1f" stroke-width="1.5"/></svg><span data-site="brand">Mangala</span></a><p style="margin-top:8px" data-site="tagline"></p></div>
+<nav aria-label="Footer"><a href="templates.html">Designs</a><a href="create.html">Create</a><a href="dashboard.html">My invitations</a><a href="index.html#pricing">Pricing</a><a href="privacy.html">Privacy</a><a data-wa="">WhatsApp us</a><a data-mail></a></nav>
+<p>© <span data-year></span> <span data-site="brand">Mangala</span></p></div></footer>
+<script src="assets/site.js"></script>
+<script src="assets/dashboard.js"></script>
+</body>
+</html>

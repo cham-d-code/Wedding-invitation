@@ -1,0 +1,4 @@
+node_modules/
+.data/
+tools/out/
+api/local.settings.json

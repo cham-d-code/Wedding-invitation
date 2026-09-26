@@ -1,0 +1,127 @@
+{
+ "p01-silk-perahera": {
+  "file": "premium/p01-silk-perahera.html",
+  "name": "Silk Perahera",
+  "premium": true
+ },
+ "p02-silk-sage-lotus": {
+  "file": "premium/p02-silk-sage-lotus.html",
+  "name": "Sage Lotus Silk",
+  "premium": true
+ },
+ "p03-velvet-seal": {
+  "file": "premium/p03-velvet-seal.html",
+  "name": "Velvet Seal",
+  "premium": true
+ },
+ "p04-silk-letter": {
+  "file": "premium/p04-silk-letter.html",
+  "name": "Silk Letter",
+  "premium": true
+ },
+ "p05-royal-curtain": {
+  "file": "premium/p05-royal-curtain.html",
+  "name": "Royal Curtain",
+  "premium": true
+ },
+ "p06-emerald-drape": {
+  "file": "premium/p06-emerald-drape.html",
+  "name": "Emerald Drape",
+  "premium": true
+ },
+ "p07-sakura-blush": {
+  "file": "premium/p07-sakura-blush.html",
+  "name": "Sakura Blush",
+  "premium": true
+ },
+ "p08-rose-garden": {
+  "file": "premium/p08-rose-garden.html",
+  "name": "Rose Garden",
+  "premium": true
+ },
+ "p09-blue-hydrangea": {
+  "file": "premium/p09-blue-hydrangea.html",
+  "name": "Blue Hydrangea",
+  "premium": true
+ },
+ "p10-ivory-lattice": {
+  "file": "premium/p10-ivory-lattice.html",
+  "name": "Ivory Lattice",
+  "premium": true
+ },
+ "01-poruwa-heritage": {
+  "file": "templates/01-poruwa-heritage.html",
+  "name": "Poruwa Heritage",
+  "premium": false
+ },
+ "02-kandyan-royal": {
+  "file": "templates/02-kandyan-royal.html",
+  "name": "Kandyan Royal",
+  "premium": false
+ },
+ "03-nelum-lotus-pond": {
+  "file": "templates/03-nelum-lotus-pond.html",
+  "name": "Nelum Lotus Pond",
+  "premium": false
+ },
+ "04-araliya-garden": {
+  "file": "templates/04-araliya-garden.html",
+  "name": "Araliya Garden",
+  "premium": false
+ },
+ "05-mangalam-tamil": {
+  "file": "templates/05-mangalam-tamil.html",
+  "name": "Mangalam",
+  "premium": false
+ },
+ "06-kovil-emerald": {
+  "file": "templates/06-kovil-emerald.html",
+  "name": "Kovil Emerald",
+  "premium": false
+ },
+ "07-nikah-noor": {
+  "file": "templates/07-nikah-noor.html",
+  "name": "Nikah Noor",
+  "premium": false
+ },
+ "08-rose-nikah": {
+  "file": "templates/08-rose-nikah.html",
+  "name": "Rose Nikah",
+  "premium": false
+ },
+ "09-holy-matrimony": {
+  "file": "templates/09-holy-matrimony.html",
+  "name": "Holy Matrimony",
+  "premium": false
+ },
+ "10-rose-window": {
+  "file": "templates/10-rose-window.html",
+  "name": "Rose Window",
+  "premium": false
+ },
+ "11-golden-opulence": {
+  "file": "templates/11-golden-opulence.html",
+  "name": "Golden Opulence",
+  "premium": false
+ },
+ "12-midnight-champagne": {
+  "file": "templates/12-midnight-champagne.html",
+  "name": "Midnight Champagne",
+  "premium": false
+ },
+ "13-modern-minimal": {
+  "file": "templates/13-modern-minimal.html",
+  "name": "Modern Minimal",
+  "premium": false
+ },
+ "14-coastal-vows": {
+  "file": "templates/14-coastal-vows.html",
+  "name": "Coastal Vows",
+  "premium": false
+ },
+ "15-tea-country": {
+  "file": "templates/15-tea-country.html",
+  "name": "Tea Country",
+  "premium": false
+ }
+}
