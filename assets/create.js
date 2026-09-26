@@ -337,7 +337,7 @@
         const r = await api('GET', `/api/invites/${encodeURIComponent(EDIT.id)}?key=${encodeURIComponent(EDIT.key)}`);
         state = r.data; SECTIONS.forEach(() => {}); touched = new Set(Object.keys(r.data));
         await chooseTemplate(r.template, true);
-        $('#dash-link').hidden = false; $('#dash-link').href = `dashboard.html?id=${encodeURIComponent(EDIT.id)}&key=${encodeURIComponent(EDIT.key)}`;
+        $('#dash-link').hidden = false; $('#dash-link').href = `/dashboard.html?id=${encodeURIComponent(EDIT.id)}&key=${encodeURIComponent(EDIT.key)}`;
         return;
       } catch (e) { modal(`<h2>Couldn’t open this invitation</h2><p class="muted" style="margin-top:10px">${esc(e.message)}</p>`); }
     }

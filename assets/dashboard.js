@@ -39,7 +39,7 @@
     $('#couple').textContent = j.couple;
     $('#when').textContent = new Date(j.date).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Colombo' });
     $('#inv-link').value = base(); $('#view').href = base();
-    $('#edit').href = `create.html?id=${encodeURIComponent(id)}&key=${encodeURIComponent(key)}`;
+    $('#edit').href = `/create.html?id=${encodeURIComponent(id)}&key=${encodeURIComponent(key)}`;
     stats(j.rsvps); table(j.rsvps);
     $('#updated').textContent = 'Updated ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
   }
@@ -67,7 +67,7 @@
 
   if (!id || !key) {
     $('#rsvp-area').hidden = true; $('#nokey').hidden = false; $('#base-row').hidden = false;
-    try { const mine = JSON.parse(localStorage.getItem('mangala-mine') || '[]'); if (mine.length) $('#mine').innerHTML = '<p class="lbl" style="margin-top:14px">Invitations created on this device</p><ul class="mine">' + mine.map(m => `<li><a href="dashboard.html?id=${encodeURIComponent(m.slug)}&key=${encodeURIComponent(m.key)}">${esc(m.names)}</a> <span class="muted">/i/${esc(m.slug)}</span></li>`).join('') + '</ul>'; } catch (_) {}
+    try { const mine = JSON.parse(localStorage.getItem('mangala-mine') || '[]'); if (mine.length) $('#mine').innerHTML = '<p class="lbl" style="margin-top:14px">Invitations created on this device</p><ul class="mine">' + mine.map(m => `<li><a href="/dashboard.html?id=${encodeURIComponent(m.slug)}&key=${encodeURIComponent(m.key)}">${esc(m.names)}</a> <span class="muted">/i/${esc(m.slug)}</span></li>`).join('') + '</ul>'; } catch (_) {}
     links(); return;
   }
   load().then(links).catch(e => { $('#rsvp-area').innerHTML = `<p class="notice err">${esc(e.message)} Check that you opened the full dashboard link you were given.</p>`; });
